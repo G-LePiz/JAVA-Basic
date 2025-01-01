@@ -1,6 +1,4 @@
-package week02;
-
-import java.sql.SQLOutput;
+package week02.Operator;
 
 public class W04 {
     // 논리연산자

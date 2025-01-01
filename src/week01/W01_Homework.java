@@ -1,6 +1,8 @@
+package week01;
+
 import java.util.Scanner;
 
-public class Main {
+public class W01_Homework {
 
     public static void main(String[] args) {
         //1. 입력 받음
