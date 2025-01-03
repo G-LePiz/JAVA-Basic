@@ -1,7 +1,7 @@
 package week03.Homework;
 
 public class SubstractOperation extends AbstractOperation {
-    double result;
+    private double result;
 
     @Override
     public double operate(int num1, int num2) {
