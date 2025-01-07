@@ -10,15 +10,17 @@ public class Parser {
     private final Calculator calculator = new Calculator(); //Calculator 클래스 끌어다가 쓰기
     private Main m = new Main();
 
-    public Parser parseFirstNum(String firstInput) throws BadInputException {
-        // 구현 1.
+    public Parser parseFirstNum(String firstInput) throws BadInputException { //클라스같은거를 리턴하는 편이 아님
+        // 구현 1. 메서드를 클래스에 넣는 이유: 기능 요구사항 중에 객체를 반환해야할 수 있음. enum 클래스, Dto...
+        // Dto같은 경우에는 많은 필드를 받아서 반환가능
+        // 클래스를 설명할 수 있음.
         // 예외처리, 숫자를 입력 받아야하는데 문자를 입력받으면 오류처리가 나게끔 해야함.
         if(!Pattern.matches(NUMBER_REG, firstInput)) {
             throw new BadInputException("정수값");
         }
         this.calculator.setFirstNumber(Integer.parseInt(firstInput));
 
-        return this;
+        return this; // this 안에 담긴 데이터를 반환하기 위해서.
     }
 
     public Parser parseSecondNum(String secondInput) throws BadInputException {

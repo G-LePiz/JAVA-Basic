@@ -16,7 +16,7 @@ public class Generic<T> { //자바 개발자의 컨벤션이라서 T를 사용�
     }
 
     public static void main(String[] args) {
-        // 4.
+        // 4. 재네릭을 통한 클래스 사용 부분
         Generic<String> stringGeneric = new Generic<>();
         // 5.
         stringGeneric.set("Hello World");
